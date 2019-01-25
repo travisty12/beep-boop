@@ -3,6 +3,7 @@
 // boops. Else if it contains a 1, it beeps. Else, it outputs the number line
 // up to that input number.
 function beepBoop(numIn) {
+  arrOut = [];
   result = "";
   if (name == "") {
     name = "Dave";
@@ -33,8 +34,9 @@ function beepBoop(numIn) {
 }
 
 function reverse(strIn) {
-  clear();
-  strOut = strIn.split(", ").reverse().join(", ");
+  strOut = strIn.split(", ")
+  strOut.reverse()
+  strOut = strOut.join(", ");
   return strOut;
 }
 
@@ -61,6 +63,7 @@ $(document).ready(function() {
       $("#nameIn").fadeIn();
     }, 400);
   });
+
   $("#nameIn").submit(function(event) {
     name = $("#userName").val();
     $("#nameIn").fadeOut();
@@ -80,10 +83,10 @@ $(document).ready(function() {
     $("#result").text(beepBoop(userIn));
     event.preventDefault();
   });
+
   $("#reverse").submit(function(event) {
-    clear();
-    $("#result").text(reverse(beepBoop(userIn)));
-    event.preventDevault();
+    $("#result").text(reverse($("#result").text()));
+    event.preventDefault();
   });
   $("#restart").click(function() {
     $("#result").fadeOut();
@@ -93,6 +96,7 @@ $(document).ready(function() {
       $("#start").fadeIn();
     }, 400);
   });
+
   $("#bottom-well-teaser").click(function() {
     $("#bottom-well-teaser").fadeOut();
     setTimeout(function(){
@@ -103,5 +107,6 @@ $(document).ready(function() {
     $("#bottom-well").fadeOut();
     setTimeout(function(){
       $("#bottom-well-teaser").fadeIn();
-    }, 400);  });
+    }, 400);
+  });
 });
