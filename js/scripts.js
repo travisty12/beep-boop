@@ -3,22 +3,47 @@
 // boops. Else if it contains a 1, it beeps. Else, it outputs the number line
 // up to that input number.
 function beepBoop(numIn) {
-  if (numIn.split("").includes("3")) {
-    return "I'm sorry Dave. I'm afraid I can't do that.";
-  } else if (numIn.split("").includes("2")) {
-    return "boop";
-  } else if (numIn.split("").includes("1")) {
-    return "beep";
-  } else {
-    for (var i = 0; i < (parseInt(numIn) + 1); i++) {
+  for (var i = 0; i < (parseInt(numIn) + 1); i++) {
+    if (i.toString().split("").includes("3")) {
+      arrOut.push("I'm sorry Dave. I'm afraid I can't do that.");
+    } else if (i.toString().split("").includes("2")) {
+      arrOut.push("Boop!");
+    } else if (i.toString().split("").includes("1")) {
+      arrOut.push("Beep!");
+    } else {
       arrOut.push(i);
     }
-    result = arrOut.join(", ");
+
   }
+  result = arrOut.join(", ");
   return result;
 }
-
+var name = "";
 var result = "";
 var arrOut = [];
+var userIn = "";
 
-beepBoop("5");
+$(document).ready(function() {
+  $("#start").click(function() {
+    $("#start").hide();
+    $("#nameIn").show();
+    $("#nameIn").submit(function(event) {
+      name = $("#userName").val();
+      $("#nameIn").hide();
+      $("#numIn").show();
+      $("#numIn").submit(function(event) {
+        userIn = $("#numBlank").val();
+        $("#numIn").hide();
+        $("#result").show();
+        $("#restart").show();
+
+        $("#result").text(beepBoop(userIn));
+        event.preventDefault();
+      });
+
+
+      event.preventDefault();
+    });
+  });
+
+});
