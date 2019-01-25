@@ -41,6 +41,21 @@ _beep-boop is a simple page that lets you input your name and a number and see t
   * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, 5, 6, Good morning, [name]"_
 
 
+* _**Spec**: The program returns a 'Cube!' if it encounters a number with an integer cube root. This has priority over everything except 'Squube!'s_
+  * _**Input**: "8"_
+  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, 5, 6, Good morning, [name], Cube!"_
+
+
+* _**Spec**: The program returns a 'Square!' if it encounters a number with an integer square root. This has priority over everything except 'Squube!'s_
+  * _**Input**: "4"_
+  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, Square!_
+
+
+* _**Spec**: The program returns a 'Squube!' if it encounters a number with both an integer square root AND cube root. This spec has the highest priority._
+  * _**Input**: "7"_
+  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, 5, 6, Good morning, [name]"_
+
+
 * _**Spec**: The program addresses the user by the name inputted to the name field (defaulted to 'Dave' if left blank)_
   * _**Input**: "Dave", "3"_
   * _**Output**: "0, Beep!, Boop!, I'm sorry Dave, I'm afraid I can't do that"_
