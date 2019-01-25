@@ -5,7 +5,10 @@
 function beepBoop(numIn) {
   for (var i = 0; i < (parseInt(numIn) + 1); i++) {
     if (i.toString().split("").includes("3")) {
-      arrOut.push("I'm sorry Dave. I'm afraid I can't do that.");
+      if (name == "") {
+        name = "Dave";
+      }
+      arrOut.push("I'm sorry " + name + ". I'm afraid I can't do that.");
     } else if (i.toString().split("").includes("2")) {
       arrOut.push("Boop!");
     } else if (i.toString().split("").includes("1")) {
@@ -18,6 +21,15 @@ function beepBoop(numIn) {
   result = arrOut.join(", ");
   return result;
 }
+
+function clear() {
+  name = "";
+  result = "";
+  arrOut = [];
+  userIn = "";
+  return;
+}
+
 var name = "";
 var result = "";
 var arrOut = [];
@@ -25,6 +37,7 @@ var userIn = "";
 
 $(document).ready(function() {
   $("#start").click(function() {
+    clear();
     $("#start").hide();
     $("#nameIn").show();
     $("#nameIn").submit(function(event) {
@@ -36,6 +49,11 @@ $(document).ready(function() {
         $("#numIn").hide();
         $("#result").show();
         $("#restart").show();
+        $("#restart").click(function() {
+          $("#result").hide();
+          $("#restart").hide();
+          $("#start").show();
+        });
 
         $("#result").text(beepBoop(userIn));
         event.preventDefault();
