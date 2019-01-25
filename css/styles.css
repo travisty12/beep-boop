@@ -78,7 +78,7 @@ input, button {
   color: white;
 }
 
-#nameIn, #numIn, #result, #restart {
+#nameIn, #numIn, #result, #restart, #reverse {
   display: none;
 }
 
