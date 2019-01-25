@@ -1,3 +1,9 @@
 #nameIn, #numIn, #result, #restart {
   display: none;
 }
+
+
+body {
+  background-color: rgba(196, 219, 148, 0.5);
+  text-align: center;
+}
