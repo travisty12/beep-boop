@@ -3,6 +3,7 @@
 // boops. Else if it contains a 1, it beeps. Else, it outputs the number line
 // up to that input number.
 function beepBoop(numIn) {
+  result = "";
   for (var i = 0; i < (parseInt(numIn) + 1); i++) {
     if (i.toString().split("").includes("3")) {
       if (name == "") {
@@ -40,28 +41,26 @@ $(document).ready(function() {
     clear();
     $("#start").hide();
     $("#nameIn").show();
-    $("#nameIn").submit(function(event) {
-      name = $("#userName").val();
-      $("#nameIn").hide();
-      $("#numIn").show();
-      $("#numIn").submit(function(event) {
-        userIn = $("#numBlank").val();
-        $("#numIn").hide();
-        $("#result").show();
-        $("#restart").show();
-        $("#restart").click(function() {
-          $("#result").hide();
-          $("#restart").hide();
-          $("#start").show();
-        });
-
-        $("#result").text(beepBoop(userIn));
-        event.preventDefault();
-      });
-
-
-      event.preventDefault();
-    });
+  });
+  $("#nameIn").submit(function(event) {
+    name = $("#userName").val();
+    $("#nameIn").hide();
+    $("#numIn").show();
+    event.preventDefault();
+  });
+  $("#numIn").submit(function(event) {
+    userIn = $("#numBlank").val();
+    $("#numIn").hide();
+    $("#result").show();
+    $("#restart").show();
+    console.log(userIn);
+    $("#result").text(beepBoop(userIn));
+    event.preventDefault();
+  });
+  $("#restart").click(function() {
+    $("#result").hide();
+    $("#restart").hide();
+    $("#start").show();
   });
 
 });
