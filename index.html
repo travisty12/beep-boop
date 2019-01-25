@@ -8,34 +8,50 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="well">
-
+      <div id="page-top" class="row">
+        <div id="top-well" class="well">
+          <div id="logo-div" class="col-md-12">
+            <div id="logo" class="well">
+              <a href="https://travisty12.github.io/portfolio/"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-
+      <div id="page-body" class="row">
+        <div id="body-well" class="well">
+          <h1 id="start">Click to begin</h1>
+          <form id="nameIn">
+            <label for="userName">What is your name?</label>
+            <input type="text" id="userName">
+            <button type="submit">Enter</button>
+          </form>
+          <form id="numIn">
+            <label for="numBlank">Enter a number to begin: </label>
+            <input type="number" id="numBlank">
+            <button type="submit">Submit</button>
+          </form>
+          <h3 id="result"></h3>
+          <h4 id="restart">Click to start over</h4>
+        </div>
       </div>
-      <div class="row">
-        <div class="well">
-
+      <div id="page-bottom" class="row">
+        <div id="bottom-well" class="well">
+          <div class="row">
+            <div class="col-md-6">
+              <p>This site made by Travis Toal, Jan. 2019</p>
+              <p>Powered by JavaScript and Bootstrap</p>
+            </div>
+            <div class="col-md-6">
+              <p>View the creator's GitHub <a id="link-text" href="https://github.com/travisty12/">here</a>.</p>
+              <p>Say hi if you'd like.</p>
+            </div>
+          </div>
+        </div>
+        <div id="bottom-well-teaser" class="well">
+          <p>;)</p>
         </div>
       </div>
     </div>
-
-    <h1 id="start">Click to begin</h1>
-    <form id="nameIn">
-      <label for="userName">What is your name?</label>
-      <input type="text" id="userName">
-      <button type="submit">Enter</button>
-    </form>
-    <form id="numIn">
-      <label for="numBlank">Enter a number to begin: </label>
-      <input type="number" id="numBlank">
-      <button type="submit">Submit</button>
-    </form>
-    <h3 id="result"></h3>
-    <h4 id="restart">Click to start over</h4>
 
 
   </body>

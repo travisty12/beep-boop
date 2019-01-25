@@ -23,7 +23,11 @@ _No known bugs. Please contact if bugs are found!_
 
 ## Support and contact details
 
-_As noted, my GitHub profile is linked at the top of the page, anchored to the logo. Feel free to contact me with any question, concern, comment, or discussion you may have._
+_Contact the author at travisty12@gmail.com_
+
+_The logo links to my portfolio, to see more projects._
+
+_My GitHub profile is linked at the bottom of the page. Feel free to contact me with any question, concern, comment, or discussion you may have, and don't forget to like, comment, and subscribe._
 
 ## Technologies Used
 

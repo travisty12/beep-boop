@@ -9,7 +9,7 @@ function beepBoop(numIn) {
       if (name == "") {
         name = "Dave";
       }
-      arrOut.push("I'm sorry " + name + ". I'm afraid I can't do that.");
+      arrOut.push("I'm sorry " + name + ". I'm afraid I can't do that");
     } else if (i.toString().split("").includes("2")) {
       arrOut.push("Boop!");
     } else if (i.toString().split("").includes("1")) {
@@ -71,5 +71,15 @@ $(document).ready(function() {
       $("#start").fadeIn();
     }, 400);
   });
-
+  $("#bottom-well-teaser").click(function() {
+    $("#bottom-well-teaser").fadeOut();
+    setTimeout(function(){
+      $("#bottom-well").fadeIn();
+    }, 400);
+  });
+  $("#bottom-well").click(function() {
+    $("#bottom-well").fadeOut();
+    setTimeout(function(){
+      $("#bottom-well-teaser").fadeIn();
+    }, 400);  });
 });

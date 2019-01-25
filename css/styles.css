@@ -1,3 +1,83 @@
+#top-well {
+  border-radius: 20px;
+  height: 240px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(11, 73, 88, 0.5);
+  border: 2px rgba(11, 73, 88, 1) solid;
+  color: white;
+}
+
+#logo {
+  transition: 1s;
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 2px rgba(77, 138, 124, 1) solid;
+  background-color: rgba(77, 138, 124,0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo img {
+  transform: translate(-70px, -60px);
+}
+
+#logo:hover {
+  transition: 1s;
+  cursor: pointer;
+  border: 2px rgba(11, 73, 88, 1) solid;
+  background-color: rgba(11, 73, 88, 0.5);
+}
+
+#body-well {
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(11, 73, 88, 0.5);
+  border: 2px rgba(11, 73, 88, 1) solid;
+  color: white;
+}
+
+input, button {
+  color: black;
+}
+
+#bottom-well-teaser {
+  transition: 1s;
+  margin-left:49%;
+  margin-right:49%;
+  width: auto;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px rgba(77, 138, 124, 1) solid;
+  background-color: rgba(77, 138, 124,0.5);
+  margin-top: 20px;
+}
+
+#bottom-well-teaser p {
+  transform: translate(-6px, -18px);
+}
+
+#bottom-well-teaser:hover {
+  transition: 1s;
+  border: 2px rgba(11, 73, 88, 1) solid;
+  background-color: rgba(11, 73, 88, 0.5);
+  cursor: pointer;
+}
+
+#bottom-well {
+  display: none;
+  font-size: 14px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgba(11, 73, 88, 0.5);
+  border: 2px rgba(11, 73, 88, 1) solid;
+  color: white;
+}
+
 #nameIn, #numIn, #result, #restart {
   display: none;
 }
@@ -5,5 +85,10 @@
 
 body {
   background-color: rgba(196, 219, 148, 0.5);
+  padding: 10px;
+  margin: 10px;
   text-align: center;
+  font-family: "Century Gothic";
+  font-size: 19pt;
+  color: white;
 }
