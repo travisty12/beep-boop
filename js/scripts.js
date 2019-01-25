@@ -12,14 +12,20 @@ function beepBoop(numIn) {
     return "My God, it's full of stars."
   } else if (parseInt(numIn) == 35) {
     return "I've just picked up a fault in the AE35 unit. It's going to go 100% failure in 72 hours."
-  } else if (parseInt(numIn) > 50) {
+  } else if (parseInt(numIn) > 75) {
     return "This mission is too important for me to allow you to jeopardize it.";
   } else if (parseInt(numIn) <= 0) {
     return "Stop, " + name + ". Stop, " + name + ". I am afraid. I am afraid, " + name + ".";
   }
   for (var i = 0; i < (parseInt(numIn) + 1); i++) {
-    if (((i % 35) == 0) && (i > 0)) {
-      arrOut.push("")
+    if (((Math.sqrt(i) % 1) == 0) && i > 1) {
+      if (((Math.cbrt(i) % 1) == 0) && i > 1) {
+        arrOut.push("Squube!");
+      } else {
+        arrOut.push("Square!");
+      }
+    } else if (((Math.cbrt(i) % 1) == 0) && i > 1) {
+      arrOut.push("Cube!");
     } else if (((i % 7) == 0) && (i > 0)) {
       arrOut.push("Good morning, " + name);
     } else if (i.toString().split("").includes("3")) {

@@ -77,6 +77,10 @@ input, button {
   transform: translate(-6px, -18px);
 }
 
+#restart:hover, #start:hover {
+  cursor: pointer;
+}
+
 #bottom-well-teaser:hover {
   transition: 1s;
   border: 2px rgba(11, 73, 88, 1) solid;

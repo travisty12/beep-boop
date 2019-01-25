@@ -1,4 +1,4 @@
-# _Travis Toal - Beep Boop_
+# _Beep Boop_
 
 #### _Your arrays and loops do WHAT?? (EMOTIONAL) (NOT CLICKBAIT) 1/25/2019_
 
@@ -34,6 +34,11 @@ _beep-boop is a simple page that lets you input your name and a number and see t
 * _**Spec**: The program returns a 2001: A Space Odyssey quote if it encounters a number with a '3' in any digit, overriding the two previous specs_
   * _**Input**: "123"_
   * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, ...[114 more responses]..., Beep!, Boop!, Boop!, Boop!, I'm sorry [name], I'm afraid I can't do that"_
+
+
+* _**Spec**: The program greets the user if it encounters a number divisible by 7_
+  * _**Input**: "7"_
+  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, 5, 6, Good morning, [name]"_
 
 
 * _**Spec**: The program addresses the user by the name inputted to the name field (defaulted to 'Dave' if left blank)_
