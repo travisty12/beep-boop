@@ -34,9 +34,7 @@ function beepBoop(numIn) {
 }
 
 function reverse(strIn) {
-  strOut = strIn.split(", ")
-  strOut.reverse()
-  strOut = strOut.join(", ");
+  strOut = strIn.split(", ").reverse().join(", ");
   return strOut;
 }
 

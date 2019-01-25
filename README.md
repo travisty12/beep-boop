@@ -1,6 +1,6 @@
 # _Travis Toal - Beep Boop_
 
-#### _Use of arrays and looping, 1/25/2019_
+#### _Your arrays and loops do WHAT?? (EMOTIONAL) (NOT CLICKBAIT) 1/25/2019_
 
 #### By _**Travis Toal**_
 
@@ -10,10 +10,11 @@ _Me: A beginning coder_
 
 _You: A bored visitor, with a fear of the first three integers and a penchant for 2001:ASO quotes_
 
-_beep-boop is a simple page that lets you input your name and number and see the number line up to that point. If that line would include some specific integers, special things happen. It's just fizzbuzz, with some spice._
+_YOU WON'T BELIEVE WHAT HAPPENS NEXT_
+
+_beep-boop is a simple page that lets you input your name and a number and see the number line up to that point. If that line would include some specific integers, special things happen. It's just fizzbuzz, with some spice._
 
 ## Specs
-
 
 * _**Spec**: The program returns a range of numbers from 0 to the user's inputted number_
   * _**Input**: "5"_
@@ -27,18 +28,27 @@ _beep-boop is a simple page that lets you input your name and number and see the
 
 * _**Spec**: The program returns a 'Boop!' if it encounters a number with a '2' in any digit, overriding the previous spec_
   * _**Input**: "12"_
-  * _**Output**: "0, Beep!, Boop!, ..., 9, Beep!, Beep!, Boop!"_
+  * _**Output**: "0, Beep!, Boop!, ...[6 more responses]..., 9, Beep!, Beep!, Boop!"_
 
 
 * _**Spec**: The program returns a 2001: A Space Odyssey quote if it encounters a number with a '3' in any digit, overriding the two previous specs_
   * _**Input**: "123"_
-  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, ..., Beep!, Boop!, Boop!, Boop!, I'm sorry [name], I'm afraid I can't do that"_
+  * _**Output**: "0, Beep!, Boop!, I'm sorry [name], I'm afraid I can't do that, 4, ...[114 more responses]..., Beep!, Boop!, Boop!, Boop!, I'm sorry [name], I'm afraid I can't do that"_
 
 
-* _**Spec**: The program addresses the user by the name inputted to the name field_
+* _**Spec**: The program addresses the user by the name inputted to the name field (defaulted to 'Dave' if left blank)_
   * _**Input**: "Dave", "3"_
   * _**Output**: "0, Beep!, Boop!, I'm sorry Dave, I'm afraid I can't do that"_
 
+
+* _**Spec**: The program reverses the outputted list upon clicking the 'reverse' button_
+  * _**Output** [pre-reverse]: "0, Beep!, Boop!"_
+  * _**Output** [reversed]: "Boop!, Beep!, 0"_
+
+
+* _**Spec**: The program gives little 2001 easter eggs with different inputs_
+  * _they're secret_
+  * _find them yourself_
 
 ## Setup/Installation Requirements
 
