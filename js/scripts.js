@@ -39,28 +39,38 @@ var userIn = "";
 $(document).ready(function() {
   $("#start").click(function() {
     clear();
-    $("#start").hide();
-    $("#nameIn").show();
+    $("#start").fadeOut();
+    setTimeout(function(){
+      $("#nameIn").fadeIn();
+    }, 400);
   });
   $("#nameIn").submit(function(event) {
     name = $("#userName").val();
-    $("#nameIn").hide();
-    $("#numIn").show();
+    $("#nameIn").fadeOut();
+    setTimeout(function(){
+      $("#numIn").fadeIn();
+    }, 400);
     event.preventDefault();
   });
   $("#numIn").submit(function(event) {
     userIn = $("#numBlank").val();
-    $("#numIn").hide();
-    $("#result").show();
-    $("#restart").show();
+    $("#numIn").fadeOut();
+    setTimeout(function(){
+      $("#result").fadeIn();
+    }, 400);
+    setTimeout(function(){
+      $("#restart").fadeIn();
+    }, 400);
     console.log(userIn);
     $("#result").text(beepBoop(userIn));
     event.preventDefault();
   });
   $("#restart").click(function() {
-    $("#result").hide();
-    $("#restart").hide();
-    $("#start").show();
+    $("#result").fadeOut();
+    $("#restart").fadeOut();
+    setTimeout(function(){
+      $("#start").fadeIn();
+    }, 400);
   });
 
 });
