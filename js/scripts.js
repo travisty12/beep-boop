@@ -61,7 +61,6 @@ $(document).ready(function() {
     setTimeout(function(){
       $("#restart").fadeIn();
     }, 400);
-    console.log(userIn);
     $("#result").text(beepBoop(userIn));
     event.preventDefault();
   });
