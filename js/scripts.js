@@ -17,7 +17,7 @@ function beepBoop(numIn) {
   } else if (parseInt(numIn) <= 0) {
     return "Stop, " + name + ". Stop, " + name + ". I am afraid. I am afraid, " + name + ".";
   } else if (numIn == "") {
-    return "Just what do you think you're doing, Dave?";
+    return "Just what do you think you're doing, " + name + "?";
   }
   for (var i = 0; i < (parseInt(numIn) + 1); i++) {
     if (((Math.sqrt(i) % 1) == 0) && i > 1) {
