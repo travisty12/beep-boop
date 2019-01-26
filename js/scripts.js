@@ -43,11 +43,14 @@ function beepBoop(numIn) {
   return result;
 }
 
+// reverse: takes a string of phrases separated by commas, returns the string
+// with the phrases in the opposite order.
 function reverse(strIn) {
   strOut = strIn.split(", ").reverse().join(", ");
   return strOut;
 }
 
+// clear: clears some elements to allow the program to be run again.
 function clear() {
   strOut = "";
   name = "";
@@ -71,7 +74,6 @@ $(document).ready(function() {
       $("#nameIn").fadeIn();
     }, 400);
   });
-
   $("#nameIn").submit(function(event) {
     name = $("#userName").val();
     $("#nameIn").fadeOut();
@@ -104,7 +106,6 @@ $(document).ready(function() {
     $("#result").text(beepBoop(userIn));
     event.preventDefault();
   });
-
   $("#reverse").submit(function(event) {
     $("#result").text(reverse($("#result").text()));
     event.preventDefault();
@@ -117,7 +118,6 @@ $(document).ready(function() {
       $("#start").fadeIn();
     }, 400);
   });
-
   $("#bottom-well-teaser").click(function() {
     $("#bottom-well-teaser").fadeOut();
     setTimeout(function(){
