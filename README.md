@@ -92,7 +92,7 @@ _My GitHub profile is linked at the bottom of the page. Feel free to contact me 
 
 _Bootstrap_
 
-_jQuery_
+_jQuery (and JavaScript)_
 
 ### License
 

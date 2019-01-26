@@ -16,6 +16,8 @@ function beepBoop(numIn) {
     return "This mission is too important for me to allow you to jeopardize it.";
   } else if (parseInt(numIn) <= 0) {
     return "Stop, " + name + ". Stop, " + name + ". I am afraid. I am afraid, " + name + ".";
+  } else if (numIn == "") {
+    return "Just what do you think you're doing, Dave?";
   }
   for (var i = 0; i < (parseInt(numIn) + 1); i++) {
     if (((Math.sqrt(i) % 1) == 0) && i > 1) {
